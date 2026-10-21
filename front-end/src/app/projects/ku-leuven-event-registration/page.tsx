@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 const screenshots = [
   { src: "/s1.png", title: "Login Interface" },
@@ -60,7 +61,7 @@ export default function KuLeuvenEventRegistration() {
           onMouseEnter={(e) => (e.currentTarget.style.color = "var(--node-blue)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
         >
-          ← Back to Projects
+          <ArrowLeft size={16} /> Back to Projects
         </Link>
       </div>
 
@@ -199,11 +200,11 @@ export default function KuLeuvenEventRegistration() {
           }}
         >
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-purple)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Conversational Chat Form</strong>
@@ -213,11 +214,11 @@ export default function KuLeuvenEventRegistration() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-purple)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Secure QR Code Generator</strong>
@@ -227,11 +228,11 @@ export default function KuLeuvenEventRegistration() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-purple)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>In-Browser Camera Scanning</strong>
@@ -241,11 +242,11 @@ export default function KuLeuvenEventRegistration() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-purple)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Security & Imports</strong>

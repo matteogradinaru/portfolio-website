@@ -65,24 +65,30 @@ const projectList = [
 export default function Projects() {
   return (
     <section className="section">
-      <div style={{ textAlign: "left", marginBottom: "50px" }}>
+      <div style={{ textAlign: "left", marginBottom: "45px" }}>
         <h1
           className="section-title"
-          style={{ fontSize: "2.5rem", marginBottom: "15px", color: "var(--heading-color)" }}
+          style={{
+            fontSize: "2.5rem",
+            marginBottom: "20px",
+            color: "var(--heading-color)",
+          }}
         >
           My Projects
         </h1>
         <p
           style={{
             fontSize: "1.15rem",
-            color: "var(--text-muted)",
+            color: "var(--text-main)",
             maxWidth: "700px",
-            lineHeight: "1.6",
+            lineHeight: "1.7",
           }}
         >
-          Here is a selection of the projects I've worked on during my courses at UCLL. 
-          They cover everything from setting up enterprise routing tables and configuring secure wireless networks 
-          to building full-stack applications. Click on any card below to read the details or play around with the interactive topologies.
+          Here is a selection of the projects I've worked on. They cover
+          everything from setting up enterprise routing tables and configuring
+          secure wireless networks to building full-stack applications and
+          working with IoT devices. Click on any card below to read the details
+          or play around with the interactive topologies.
         </p>
       </div>
 
@@ -96,25 +102,18 @@ export default function Projects() {
         {projectList.map((project) => (
           <div
             key={project.id}
+            className="contact-card"
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.08)";
               e.currentTarget.style.borderColor = project.color;
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.04)";
-              e.currentTarget.style.borderColor = "var(--border-color)";
+              e.currentTarget.style.borderColor = "";
             }}
             style={{
-              display: "flex",
               flexDirection: "column",
-              background: "var(--card-bg)",
-              border: "1px solid var(--border-color)",
-              borderRadius: "12px",
-              padding: "24px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
-              transition:
-                "box-shadow 0.2s ease, border-color 0.2s ease",
+              alignItems: "stretch",
               height: "100%",
+              gap: 0,
             }}
           >
             {/* Specialization Badge */}
@@ -179,7 +178,7 @@ export default function Projects() {
                     backgroundColor: "var(--bg-color)",
                     padding: "3px 8px",
                     borderRadius: "4px",
-                    border: "1px solid var(--border-color)",
+                    border: `1px solid ${project.color}60`,
                   }}
                 >
                   {tag}
@@ -209,7 +208,8 @@ export default function Projects() {
                   e.currentTarget.style.color = "#fff";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "var(--heading-color)";
+                  e.currentTarget.style.backgroundColor =
+                    "var(--heading-color)";
                   e.currentTarget.style.color = "var(--inverse-text)";
                 }}
               >

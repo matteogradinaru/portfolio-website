@@ -25,20 +25,24 @@ export default function Contact() {
   return (
     <section
       className="section"
-      style={{ textAlign: "left", maxWidth: "800px", padding: "40px 0" }}
+      style={{ textAlign: "left", maxWidth: "800px" }}
     >
       <h2
         className="section-title"
-        style={{ color: "var(--heading-color)", marginBottom: "20px" }}
+        style={{
+          fontSize: "2.5rem",
+          marginBottom: "20px",
+          color: "var(--heading-color)",
+        }}
       >
         Let's Connect
       </h2>
       <p
         style={{
           marginBottom: "40px",
-          fontSize: "1.1rem",
-          lineHeight: "1.6",
-          color: "var(--text-color, #555)",
+          fontSize: "1.15rem",
+          lineHeight: "1.7",
+          color: "var(--text-main)",
         }}
       >
         The best projects start with a simple conversation. Find me on any of
@@ -138,7 +142,7 @@ export default function Contact() {
 
         {/* GitHub */}
         <a
-          href="https://github.com/MatteoGradinaru"
+          href="https://github.com/matteogradinaru"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-card"
@@ -154,7 +158,7 @@ export default function Contact() {
             </div>
             <div>
               <span className="contact-text-label">GitHub</span>
-              <span className="contact-text-value">MatteoGradinaru</span>
+              <span className="contact-text-value">matteogradinaru</span>
             </div>
           </div>
 

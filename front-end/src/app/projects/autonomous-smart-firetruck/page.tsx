@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import FiretruckExplorer from "@/components/ui/FiretruckExplorer";
 
 export default function AutonomousSmartFiretruck() {
@@ -20,7 +21,7 @@ export default function AutonomousSmartFiretruck() {
           onMouseEnter={(e) => (e.currentTarget.style.color = "var(--node-blue)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
         >
-          ← Back to Projects
+          <ArrowLeft size={16} /> Back to Projects
         </Link>
       </div>
 
@@ -97,11 +98,11 @@ export default function AutonomousSmartFiretruck() {
           }}
         >
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-orange)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Container Orchestration (OKD)</strong>
@@ -112,11 +113,11 @@ export default function AutonomousSmartFiretruck() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-orange)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Automated CI/CD</strong>
@@ -127,11 +128,11 @@ export default function AutonomousSmartFiretruck() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-orange)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>WebSocket Telemetry</strong>
@@ -142,11 +143,11 @@ export default function AutonomousSmartFiretruck() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-orange)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>Reliability & Fallbacks</strong>

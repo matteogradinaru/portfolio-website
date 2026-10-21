@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import NetworkExplorer from "@/components/ui/NetworkExplorer";
 
 export default function AdvancedEnterpriseRouting() {
@@ -20,7 +21,7 @@ export default function AdvancedEnterpriseRouting() {
           onMouseEnter={(e) => (e.currentTarget.style.color = "var(--node-blue)")}
           onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-muted)")}
         >
-          ← Back to Projects
+          <ArrowLeft size={16} /> Back to Projects
         </Link>
       </div>
 
@@ -91,11 +92,11 @@ export default function AdvancedEnterpriseRouting() {
           }}
         >
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-blue)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>IGP Core (IS-IS)</strong>
@@ -105,11 +106,11 @@ export default function AdvancedEnterpriseRouting() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-blue)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>MPLS / LDP</strong>
@@ -119,11 +120,11 @@ export default function AdvancedEnterpriseRouting() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-blue)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>MP-BGP & VPNv4</strong>
@@ -133,11 +134,11 @@ export default function AdvancedEnterpriseRouting() {
             </p>
           </li>
           <li
+            className="static-card"
             style={{
-              background: "var(--card-bg)",
-              padding: "15px",
-              borderRadius: "8px",
-              borderLeft: "4px solid var(--node-blue)",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              gap: 0,
             }}
           >
             <strong style={{ color: "var(--heading-color)" }}>CE-to-CE Security (IPsec)</strong>
