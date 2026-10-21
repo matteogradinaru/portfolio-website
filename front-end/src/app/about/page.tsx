@@ -70,7 +70,7 @@ export default function About() {
               lineHeight: "1.6",
             }}
           >
-            <li>IS-IS Routing & OSPF Protocols</li>
+            <li>IS-IS Routing Protocol</li>
             <li>BGP (iBGP / eBGP) & MPLS Backbone</li>
             <li>VLAN segmentation & Trunking</li>
             <li>Enterprise Wireless LAN (Cisco WLC)</li>
